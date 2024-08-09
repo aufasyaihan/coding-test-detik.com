@@ -7616,6 +7616,10 @@ textarea.form-control-lg {
   width: 23rem !important;
 }
 
+.w-16-75 {
+  width: 16.75rem !important;
+}
+
 .w-auto {
   width: auto !important;
 }
@@ -7630,6 +7634,10 @@ textarea.form-control-lg {
 
 .min-vw-100 {
   min-width: 100vw !important;
+}
+
+.h-3 {
+  height: 3rem !important;
 }
 
 .h-25 {
@@ -7654,6 +7662,10 @@ textarea.form-control-lg {
 
 .h-800 {
   height: 800px !important;
+}
+
+.h-500 {
+  height: 500px !important;
 }
 
 .h-656 {
@@ -7920,6 +7932,11 @@ textarea.form-control-lg {
   margin-bottom: 0 !important;
 }
 
+.my-10 {
+  margin-top: 10.25rem !important;
+  margin-bottom: 10.25rem !important;
+}
+
 .my-1 {
   margin-top: 0.25rem !important;
   margin-bottom: 0.25rem !important;
@@ -7948,6 +7965,10 @@ textarea.form-control-lg {
 .my-auto {
   margin-top: auto !important;
   margin-bottom: auto !important;
+}
+
+.mt-10 {
+  margin-top: 10.25rem !important;
 }
 
 .mt-0 {
@@ -8299,6 +8320,10 @@ textarea.form-control-lg {
 
 .gap-7-5{
   gap: 7.5rem !important;
+}
+
+.gap-5-3{
+  gap: 5.3rem !important;
 }
 
 .gap-8 {
@@ -8823,6 +8848,10 @@ textarea.form-control-lg {
 .bg-dark {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-dark-blue {
+  background-color: #232340;
 }
 
 .bg-black {
