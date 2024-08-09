@@ -7899,6 +7899,10 @@ textarea.form-control-lg {
   margin-right: 3rem !important;
   margin-left: 3rem !important;
 }
+.mx-7-5 {
+  margin-right: 7.5rem !important;
+  margin-left: 7.5rem !important;
+}
 
 .mx-8 {
   margin: 0rem 8.75rem 0rem 8.75rem !important;
@@ -8002,6 +8006,10 @@ textarea.form-control-lg {
 
 .me-5 {
   margin-right: 3rem !important;
+}
+
+.me-7-5{
+  margin-right: 7.5rem !important;
 }
 
 .me-auto {
@@ -8176,6 +8184,10 @@ textarea.form-control-lg {
   padding-top: 3rem !important;
 }
 
+.pt-2-5 {
+  padding-top: 2.5rem !important;
+}
+
 .pe-0 {
   padding-right: 0 !important;
 }
@@ -8270,6 +8282,14 @@ textarea.form-control-lg {
 
 .gap-5 {
   gap: 3rem !important;
+}
+
+.gap-7-5{
+  gap: 7.5rem !important;
+}
+
+.gap-8 {
+  gap: 8rem !important;
 }
 
 .row-gap-0 {

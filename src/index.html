@@ -14,8 +14,8 @@
     <title>Landing Page</title>
   </head>
   <body>
-    <header class="position-relative overflow-hidden h-800 w-100">
-      <nav class="navbar bg-transparent mx-8 mt-2-5">
+    <header class="position-relative h-800 w-100">
+      <nav class="navbar bg-transparent mx-8 pt-2-5">
         <h1 class="fw-bold text-white">
           team<span class="text-primary">.</span>
         </h1>
@@ -39,8 +39,7 @@
           </li>
         </ul>
       </nav>
-
-      <section class="mx-8 h-100 text-white d-flex align-items-center">
+      <div class="position-absolute mx-8 h-100 top-0 text-white d-flex align-items-center">
         <div class="row w-50">
           <h1 class="fw-bold">Instant collaboration for remote teams</h1>
           <p class="fs-5 fw-light bi">
@@ -52,8 +51,8 @@
               <label
                 class="position-absolute z-1 text-secondary h-100 d-flex align-items-center justify-content-between w-100 px-3"
                 for="email"
-                >Email <i class="bi bi-arrow-right mt-1"></i></label
-              >
+                >Email <i class="bi bi-arrow-right mt-1"></i
+              ></label>
               <input
                 class="form-control h-100"
                 type="email"
@@ -66,26 +65,45 @@
             </button>
           </div>
         </div>
-      </section>
+      </div>
       <img
-        class="position-absolute w-100 top-0 z-n1 object-fit-cover"
+        class="position-absolute h-100 w-100 top-0 z-n1 object-fit-cover"
         src="../images/christina-wocintechchat-com-L85a1k-XqH8-unsplash 1.png"
         alt="hero"
       />
     </header>
-    <main class="w-100 d-flex flex-column mt-5rem">
+    <main class="w-100 d-flex flex-column gap-7-5 mt-5rem">
       <section class="w-100 h-656 d-flex align-items-center">
-        <div class="row w-50 d-flex flex-column ms-8">
+        <div class="w-50 d-flex flex-column ms-8">
           <h2 class="fw-bold">Chats for your distributed teams</h2>
           <p class="fs-5 fw-light">
-            Team combines the immediacy of real-time chat with an email threading model. With Team, you can catch up on important conversations while ignoring irrelevant ones.
+            Team combines the immediacy of real-time chat with an email
+            threading model. With Team, you can catch up on important
+            conversations while ignoring irrelevant ones.
           </p>
-          <a class="fw-medium" href="#">Learn more <i class="bi bi-arrow-right"></i></a>
+          <a class="fw-medium" href="#"
+            >Learn more <i class="bi bi-arrow-right"></i
+          ></a>
         </div>
         <div>
-          <img src="../images/mockup.png" alt="mockup">
+          <img src="../images/mockup.png" alt="mockup" />
         </div>
-          
+      </section>
+      <section class="h-auto d-flex mx-7-5 gap-8 align-items-center">
+        <div class="">
+          <img src="../images/Image.png" alt="image" width="565" height="565" />
+        </div>
+        <div class="w-50 d-flex flex-column">
+          <h2 class="fw-bold">Chats for your distributed teams</h2>
+          <p class="fs-5 fw-light">
+            Team combines the immediacy of real-time chat with an email
+            threading model. With Team, you can catch up on important
+            conversations while ignoring irrelevant ones.
+          </p>
+          <a class="fw-medium" href="#"
+            >Learn more <i class="bi bi-arrow-right"></i
+          ></a>
+        </div>
       </section>
     </main>
   </body>
