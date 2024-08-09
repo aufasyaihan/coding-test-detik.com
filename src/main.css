@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -181,10 +182,12 @@
   --bs-form-invalid-border-color: #ea868f;
 }
 
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -3041,6 +3044,14 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #6c757d;
   --bs-btn-disabled-border-color: #6c757d;
+}
+
+.btn-purple{
+  background-color: rgba(84, 104, 231, 0.5);
+}
+
+.btn-purple:hover{
+  background-color: #5468ff;
 }
 
 .btn-success {
@@ -7601,6 +7612,8 @@ textarea.form-control-lg {
   width: 100% !important;
 }
 
+
+
 .w-auto {
   width: auto !important;
 }
@@ -7635,6 +7648,10 @@ textarea.form-control-lg {
 
 .h-auto {
   height: auto !important;
+}
+
+.h-800 {
+  height: 800px !important;
 }
 
 .mh-100 {
@@ -7879,6 +7896,10 @@ textarea.form-control-lg {
   margin-left: 3rem !important;
 }
 
+.mx-8 {
+  margin: 0rem 8.75rem 0rem 8.75rem !important;
+}
+
 .mx-auto {
   margin-right: auto !important;
   margin-left: auto !important;
@@ -7937,6 +7958,10 @@ textarea.form-control-lg {
 
 .mt-4 {
   margin-top: 1.5rem !important;
+}
+
+.mt-2-5 {
+  margin-top: 2.5rem !important;
 }
 
 .mt-5 {

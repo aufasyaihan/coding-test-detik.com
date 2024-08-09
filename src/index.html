@@ -5,15 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css" />
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <title>Landing Page</title>
   </head>
   <body>
-    <header>
-      <nav class="container bg-transparent">
-        <h1>team<span class="text-primary">.</span></h1>
+    <header class="position-relative overflow-hidden h-800 w-100">
+      <nav class="navbar bg-transparent mx-8 mt-2-5">
+        <h1 class="fw-bold text-white">
+          team<span class="text-primary">.</span>
+        </h1>
+        <ul class="navbar-nav d-flex flex-row align-items-center gap-5">
+          <li class="nav-item">
+            <a href="#" class="link-light link-underline-light">Product</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="link-light link-underline-light">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="link-light link-underline-light">Support</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="link-light link-underline-light">Log In</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="btn text-white px-5 py-3 btn-purple"
+              >Get Access</a
+            >
+          </li>
+        </ul>
       </nav>
+
+      <section class="mx-8 h-100 text-white d-flex align-items-center">
+        <div class="row w-50">
+          <h1 class="fw-bold">Instant collaboration for remote teams</h1>
+          <p class="fs-5 fw-light">
+            All-in-one place for your remote team to chat, collaborate and track
+            project progress.
+          </p>
+          <div class="d-flex gap-1 justify-content-between">
+            <div class="w-50 position-relative">
+              <label class="position-absolute z-1 text-secondary h-100 d-grid align-items-center justify-content-between w-100 ps-2" for="email">Email</label>
+              
+              <input
+                class="form-control h-100"
+                type="email"
+                name="email"
+                id="email"
+              />
+            </div>
+            <button class="btn text-white px-5 py-2 btn-primary">
+              Get Early Access
+            </button>
+          </div>
+        </div>
+      </section>
+      <img
+        class="position-absolute w-100 top-0 z-n1 object-fit-cover"
+        src="../images/christina-wocintechchat-com-L85a1k-XqH8-unsplash 1.png"
+        alt="hero"
+      />
     </header>
   </body>
 </html>
