@@ -15,7 +15,6 @@
   "author": "aufa",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.3.3",
-    "bootstrap-icons": "^1.11.3"
+    "bootstrap": "^5.3.3"
   }
 }

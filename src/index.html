@@ -6,6 +6,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <title>Landing Page</title>
   </head>
@@ -39,14 +43,17 @@
       <section class="mx-8 h-100 text-white d-flex align-items-center">
         <div class="row w-50">
           <h1 class="fw-bold">Instant collaboration for remote teams</h1>
-          <p class="fs-5 fw-light">
+          <p class="fs-5 fw-light bi">
             All-in-one place for your remote team to chat, collaborate and track
             project progress.
           </p>
           <div class="d-flex gap-1 justify-content-between">
             <div class="w-50 position-relative">
-              <label class="position-absolute z-1 text-secondary h-100 d-grid align-items-center justify-content-between w-100 ps-2" for="email">Email</label>
-              
+              <label
+                class="position-absolute z-1 text-secondary h-100 d-flex align-items-center justify-content-between w-100 px-3"
+                for="email"
+                >Email <i class="bi bi-arrow-right mt-1"></i></label
+              >
               <input
                 class="form-control h-100"
                 type="email"
@@ -66,5 +73,20 @@
         alt="hero"
       />
     </header>
+    <main class="w-100 d-flex flex-column mt-5rem">
+      <section class="w-100 h-656 d-flex align-items-center">
+        <div class="row w-50 d-flex flex-column ms-8">
+          <h2 class="fw-bold">Chats for your distributed teams</h2>
+          <p class="fs-5 fw-light">
+            Team combines the immediacy of real-time chat with an email threading model. With Team, you can catch up on important conversations while ignoring irrelevant ones.
+          </p>
+          <a class="fw-medium" href="#">Learn more <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div>
+          <img src="../images/mockup.png" alt="mockup">
+        </div>
+          
+      </section>
+    </main>
   </body>
 </html>

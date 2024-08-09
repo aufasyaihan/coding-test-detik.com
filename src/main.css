@@ -7654,6 +7654,10 @@ textarea.form-control-lg {
   height: 800px !important;
 }
 
+.h-656 {
+  height: 656px !important;
+}
+
 .mh-100 {
   max-height: 100% !important;
 }
@@ -7968,6 +7972,10 @@ textarea.form-control-lg {
   margin-top: 3rem !important;
 }
 
+.mt-5rem {
+  margin-top: 5rem !important;
+}
+
 .mt-auto {
   margin-top: auto !important;
 }
@@ -8050,6 +8058,10 @@ textarea.form-control-lg {
 
 .ms-5 {
   margin-left: 3rem !important;
+}
+
+.ms-8 {
+  margin-left: 8.75rem !important;
 }
 
 .ms-auto {
