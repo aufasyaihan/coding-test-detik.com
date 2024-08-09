@@ -1,0 +1,20 @@
+{
+  "name": "coding-test",
+  "version": "1.0.0",
+  "description": "Coding test for Detik.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bootstrap",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "aufa",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
