@@ -14,7 +14,7 @@
     <script src="./index.js"></script>
     <title>Landing Page</title>
   </head>
-  <body>
+  <body class="d-flex flex-column overflow-x-hidden">
     <header class="position-relative h-800 w-100">
       <!-- <nav class="navbar bg-transparent mx-8 pt-2-5 z-3">
         <h1 class="fw-bold text-white">
@@ -40,7 +40,9 @@
           </li>
         </ul>
       </nav> -->
-      <nav class="navbar navbar-expand-lg bg-transparent mx-1-8 mx-lg-8 pt-2-5 z-3">
+      <nav
+        class="navbar navbar-expand-lg bg-transparent mx-1-8 mx-lg-8 pt-2-5 z-3"
+      >
         <div class="container-fluid">
           <a class="navbar-brand" href="#"
             ><h1 class="fw-bold text-white">
@@ -56,9 +58,12 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-          <i class="bi bi-list fs-2"></i>
+            <i class="bi bi-list fs-2"></i>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
             <ul class="navbar-nav d-flex align-items-lg-center gap-5">
               <li class="nav-item">
                 <a href="#" class="link-light link-underline-light">Product</a>
@@ -116,9 +121,11 @@
         alt="hero"
       />
     </header>
-    <main class="w-100 d-flex flex-column gap-7-5 mt-5rem">
-      <section class="w-100 h-656 d-flex align-items-center">
-        <div class="w-50 d-flex flex-column ms-8">
+    <main class="w-100 d-flex flex-column gap-5 mt-5rem px-lg-0 px-1-8">
+      <section
+        class="w-100 h-lg-656 gap-5 d-flex flex-wrap-reverse flex-lg-nowrap align-items-center"
+      >
+        <div class="w-lg-50 d-flex flex-column ms-lg-8">
           <h2 class="fw-bold">Chats for your distributed teams</h2>
           <p class="fs-5 fw-light">
             Team combines the immediacy of real-time chat with an email
@@ -133,11 +140,19 @@
           <img src="../images/mockup.png" alt="mockup" />
         </div>
       </section>
-      <section class="h-auto d-flex mx-7-5 gap-8 align-items-center">
+      <section
+        class="w-100 h-lg-656 gap-5 d-flex flex-wrap flex-lg-nowrap align-items-center"
+      >
         <div>
-          <img src="../images/Image.png" alt="image" width="565" height="565" />
+          <img
+            class="img-fluid"
+            src="../images/Image.png"
+            alt="image"
+            width="565"
+            height="565"
+          />
         </div>
-        <div class="w-50 d-flex flex-column">
+        <div class="w-lg-50 d-flex flex-column ms-lg-8">
           <h2 class="fw-bold">Chats for your distributed teams</h2>
           <p class="fs-5 fw-light">
             Team combines the immediacy of real-time chat with an email
@@ -149,8 +164,10 @@
           ></a>
         </div>
       </section>
-      <section class="h-auto d-flex mx-7-5 gap-8 align-items-center">
-        <div class="w-50 d-flex flex-column">
+      <section
+        class="w-100 h-lg-656 gap-5 d-flex flex-wrap-reverse flex-lg-nowrap align-items-center"
+      >
+        <div class="w-lg-50 d-flex flex-column ms-lg-8">
           <h2 class="fw-bold">Choose how you want to work</h2>
           <p class="fs-5 fw-light">
             In Team, you’ve got all the flexibility to work when, where and how
@@ -163,6 +180,7 @@
         </div>
         <div>
           <img
+            class="img-fluid"
             src="../images/Image2.png"
             alt="image"
             width="565"
@@ -170,16 +188,19 @@
           />
         </div>
       </section>
-      <section class="h-auto d-flex mx-7-5 gap-8 align-items-center">
+      <section
+        class="w-100 h-lg-656 gap-5 d-flex flex-wrap flex-lg-nowrap align-items-center"
+      >
         <div>
           <img
+            class="img-fluid"
             src="../images/Image3.png"
             alt="image"
             width="565"
             height="565"
           />
         </div>
-        <div class="w-50 d-flex flex-column">
+        <div class="w-lg-50 d-flex flex-column">
           <h2 class="fw-bold">Move faster with your Team tools</h2>
           <p class="fs-5 fw-light">
             With your other work apps connected to Team, you can work faster by
@@ -192,9 +213,9 @@
         </div>
       </section>
       <section
-        class="d-flex flex-column gap-5 mx-7-5 px-5 py-5 overflow-x-hidden"
+        class="gap-5 h-100 d-lg-flex flex-column flex-wrap flex-lg-nowrap mx-lg-7-5 p-lg-5 overflow-x-hidden"
       >
-        <h1 class="text-center">What people say about Team</h1>
+        <h1 class="text-center mb-lg-0 mb-5">What people say about Team</h1>
         <div
           class="d-flex gap-5 transition-all cursor-grab"
           id="testimonial-container"
@@ -220,6 +241,7 @@
               </div>
               <div class="d-flex align-content-center gap-3">
                 <img
+                  class="img-fluid"
                   src="https://i.pravatar.cc/200"
                   alt="profile"
                   class="rounded-circle"
@@ -254,6 +276,7 @@
               </div>
               <div class="d-flex align-content-center gap-3">
                 <img
+                  class="img-fluid"
                   src="https://i.pravatar.cc/200"
                   alt="profile"
                   class="rounded-circle"
@@ -288,6 +311,7 @@
               </div>
               <div class="d-flex align-content-center gap-3">
                 <img
+                  class="img-fluid"
                   src="https://i.pravatar.cc/200"
                   alt="profile"
                   class="rounded-circle"

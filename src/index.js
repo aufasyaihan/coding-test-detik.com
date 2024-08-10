@@ -54,9 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const movedBy = currentTranslate - prevTranslate;
 
-    if (movedBy < -itemWidth / 4 && scrollAmount < scrollMax) {
+    if (movedBy < -itemWidth / 6 && scrollAmount < scrollMax) {
       scrollAmount += itemWidth;
-    } else if (movedBy > itemWidth / 4 && scrollAmount > 0) {
+    } else if (movedBy > itemWidth / 6 && scrollAmount > 0) {
       scrollAmount -= itemWidth;
     }
 
