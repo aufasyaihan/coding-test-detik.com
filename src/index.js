@@ -1,8 +1,10 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const container = document.getElementById('testimonial-container');
-  const leftButton = document.getElementById('btn-left');
-  const rightButton = document.getElementById('btn-right');
-  const items = document.querySelectorAll('#testimonial-item');
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("testimonial-container");
+  const leftButton = document.getElementById("btn-left");
+  const rightButton = document.getElementById("btn-right");
+  const items = document.querySelectorAll("#testimonial-item");
+  const navbar = document.getElementById("navbar");
+  const toggleButton = document.getElementById("navbar-toggler");
 
   let scrollAmount = 0;
   let isDragging = false;
@@ -10,11 +12,23 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentTranslate = 0;
   let prevTranslate = 0;
   let animationID;
-  const itemWidth = items[0].offsetWidth + parseInt(getComputedStyle(items[0]).marginRight);
+  const itemWidth =
+    items[0].offsetWidth + parseInt(getComputedStyle(items[0]).marginRight);
 
   const scrollMax = container.scrollWidth - container.clientWidth;
 
-  rightButton.addEventListener('click', () => {
+  navbar.classList.add("nav-closed");
+  toggleButton.addEventListener("click", () => {
+    if (navbar.classList.contains("nav-closed")) {
+      navbar.classList.remove("nav-closed");
+      navbar.classList.add("nav-open");
+    } else {
+      navbar.classList.remove("nav-open");
+      navbar.classList.add("nav-closed");
+    }
+  });
+
+  rightButton.addEventListener("click", () => {
     if (scrollAmount > 0) {
       scrollAmount -= itemWidth;
       container.style.transform = `translateX(-${scrollAmount}px)`;
@@ -23,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  leftButton.addEventListener('click', () => {
+  leftButton.addEventListener("click", () => {
     if (scrollAmount < scrollMax) {
       scrollAmount += itemWidth;
       container.style.transform = `translateX(-${scrollAmount}px)`;
@@ -32,20 +46,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  container.addEventListener('touchstart', touchStart);
-  container.addEventListener('touchend', touchEnd);
-  container.addEventListener('touchmove', touchMove);
+  container.addEventListener("touchstart", touchStart);
+  container.addEventListener("touchend", touchEnd);
+  container.addEventListener("touchmove", touchMove);
 
-  container.addEventListener('mousedown', touchStart);
-  container.addEventListener('mouseup', touchEnd);
-  container.addEventListener('mouseleave', touchEnd);
-  container.addEventListener('mousemove', touchMove);
+  container.addEventListener("mousedown", touchStart);
+  container.addEventListener("mouseup", touchEnd);
+  container.addEventListener("mouseleave", touchEnd);
+  container.addEventListener("mousemove", touchMove);
 
   function touchStart(event) {
     isDragging = true;
     startPos = getPositionX(event);
     animationID = requestAnimationFrame(animation);
-    container.style.cursor = 'grabbing';
+    container.style.cursor = "grabbing";
   }
 
   function touchEnd() {
@@ -64,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     currentTranslate = -scrollAmount;
     prevTranslate = currentTranslate;
 
-    container.style.cursor = 'grab';
+    container.style.cursor = "grab";
   }
 
   function touchMove(event) {
@@ -76,7 +90,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function getPositionX(event) {
-    return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+    return event.type.includes("mouse")
+      ? event.pageX
+      : event.touches[0].clientX;
   }
 
   function animation() {

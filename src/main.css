@@ -3944,6 +3944,7 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+  transition: all 0.3s ease-in-out
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -8867,6 +8868,15 @@ textarea.form-control-lg {
 .bg-dark {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.nav-open {
+  background-color: rgb(35, 35, 64) !important;
+  margin: 0px;
+}
+
+.nav-closed {
+  margin: 0rem 1.8rem 0rem 1.8rem !important;
 }
 
 .bg-dark-blue {
