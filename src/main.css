@@ -758,6 +758,17 @@ progress {
     max-width: 720px;
   }
 }
+
+@media (min-width: 768px) {
+  .img-md-fluid {
+    height: 565px;
+    width: 565px;
+  }
+
+  .w-md-50 {
+    width: 50% !important ;
+  }
+}
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
     max-width: 960px;
@@ -8875,6 +8886,11 @@ textarea.form-control-lg {
   margin: 0px;
 }
 
+.placeholder-white::placeholder {
+  color: var(--bs-light);
+  opacity: 1;
+}
+
 .nav-closed {
   margin: 0rem 1.8rem 0rem 1.8rem !important;
 }
@@ -10607,11 +10623,6 @@ textarea.form-control-lg {
   .mx-lg-7-5 {
     margin-right: 7.5rem !important;
     margin-left: 7.5rem !important;
-  }
-
-  .placeholder-white::placeholder {
-    color: var(--bs-light);
-    opacity: 1;
   }
 
   .mx-lg-8 {
