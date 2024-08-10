@@ -10609,6 +10609,11 @@ textarea.form-control-lg {
     margin-left: 7.5rem !important;
   }
 
+  .placeholder-white::placeholder {
+    color: var(--bs-light);
+    opacity: 1;
+  }
+
   .mx-lg-8 {
     margin-right: 8rem !important;
     margin-left: 8rem !important;
