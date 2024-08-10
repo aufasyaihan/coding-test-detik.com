@@ -7919,7 +7919,13 @@ textarea.form-control-lg {
 }
 
 .mx-8 {
-  margin: 0rem 8.75rem 0rem 8.75rem !important;
+  margin-right: 8.75rem !important;
+  margin-left: 8.75rem !important;
+}
+
+.mx-1-8 {
+  margin-right: 1.8rem !important;
+  margin-left: 1.8rem !important;
 }
 
 .mx-auto {
@@ -10577,6 +10583,12 @@ textarea.form-control-lg {
     margin-right: 3rem !important;
     margin-left: 3rem !important;
   }
+
+  .mx-lg-8 {
+    margin-right: 8rem !important;
+    margin-left: 8rem !important;
+  }
+
   .mx-lg-auto {
     margin-right: auto !important;
     margin-left: auto !important;
@@ -10641,6 +10653,10 @@ textarea.form-control-lg {
   }
   .me-lg-3 {
     margin-right: 1rem !important;
+  }
+
+  .w-lg-50 {
+    width: 50% !important;
   }
   .me-lg-4 {
     margin-right: 1.5rem !important;
